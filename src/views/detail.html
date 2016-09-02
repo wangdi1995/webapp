@@ -1,0 +1,25 @@
+<div class="detailPage">
+	<div class="T-shirt">
+		<a ui-sref="public.home" class="back"></a>
+		<img src="img/redgirl.png">
+		<p>T  恤</p>
+	</div>
+	<div class="sale">
+		<ul>
+			<li><a href="#" class="on">上新</a></li>
+			<li><a href="#">热销</a></li>
+			<li><a href="#">价格</a></li>
+			<li><a href="#">筛选</a></li>
+		</ul>
+		<div class="salecloth">
+			<dl ng-repeat="i in clothType">
+				<dt><img src="{{i.img}}"></dt>
+				<dd>
+					<p>{{i.tit}}</p>
+					<p>{{i.artical}}</p>
+					<p><span>{{i.price[0]}}</span><small>{{i.price[1]}}</small></p>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>

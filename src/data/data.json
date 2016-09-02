@@ -1,0 +1,17 @@
+{
+	"shoppingPage":{
+		"banner":["img/home_ban.png","img/f-ban1.png","img/f-ban1.png"]
+	},
+	"inspirationPage":{
+		"id":"3",
+		"hot":[{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴1","span":"＋关注","bigImg":"img/f-ban2.png"},{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴","span":"＋关注","bigImg":"img/f-ban2.png"},{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴","span":"＋关注","bigImg":"img/f-ban2.png"}],
+		"recommend":[{"dlImg":"img/re-pic.png"}],
+		"attention":["img/att-pic1.png","img/att-pic2.png","img/att-pic3.png","img/att-pic4.png","img/att-pic5.png","img/att-pic6.png"],
+		"liveStreaming":[{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴4","span":"＋关注","bigImg":"img/f-ban2.png"},{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴","span":"＋关注","bigImg":"img/f-ban2.png"},{"dlImg":"img/f-peo.png","h4":"鸡蛋妹爱嘟嘟嘴","span":"＋关注","bigImg":"img/f-ban2.png"}]
+	},
+	"goodPage":{
+		"id":"4",
+		"gShop":[{"dlImg":"img/g-pic1.png","p":"新品特惠限量60套","span":"￥39.90"},{"dlImg":"img/g-pic2.png","p":"百雀羚8杯水保湿","span":"￥33.00"},{"dlImg":"img/g-pic3.png","p":"电子体温计&nbsp;成人","span":"￥12.00"},{"dlImg":"img/g-pic4.png","p":"七度空间优雅","span":"￥41.90"}],
+		"gCloth":[{"img":"img/g-pic5.png","span":"夏季新品"},{"img":"img/g-pic6.png","span":"T-恤"},{"img":"img/g-pic7.png","span":"时尚套装"},{"img":"img/g-pic8.png","span":"雪纺衫"},{"img":"img/g-pic9.png","span":"衬衫"},{"img":"img/g-pic10.png","span":"背心吊带"},{"img":"img/g-pic11.png","span":"防晒衫"},{"img":"img/g-pic12.png","span":"蕾丝衫"}]
+	}
+}

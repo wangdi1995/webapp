@@ -1,0 +1,35 @@
+<div class="contain">
+	<div class="header" ng-class="{true:'header_on',false:''}[flag]">
+		 <div ng-show="flag1" class="p-menu" ng-click="showAlertBox()"></div>
+		<div ng-show="flag2" class="p-back"></div>
+		  <h4 ng-show="flag3">
+		  	<p ng-bind="title"></p>
+		  </h4>
+		<input ng-show="flag4" type="text" placeholder="时尚简约套装" class="p-in1">
+		<input ng-show="flag5" type="text" placeholder="阳光沙滩和长裙" class="p-in2">
+		<div ng-show="flag6" class="p-gwc"></div> 
+		<div ng-show="flag7" class="p-add"></div>
+		<p ng-show="flag8" class="p-set" ng-click="set()">设置</p> 
+	</div>
+	<!-- 
+	<ul>
+		<li ng-repeat="i in json" ng-if="i.flag" ng-hide="!i.flag" class={{i.class}}>
+			{{i.name}}
+		</li>
+	</ul>
+	<p>
+			<a ui-sref="public.hot" class="typeOn">热门</a>
+			<a ui-sref="public.species">品类</a>
+			<a ui-sref="public.brand">品牌</a>
+	</p> -->
+	<div class="main">
+		<div ui-view class="main_view"></div>
+	</div>
+	<div class="footer">
+		 <!-- -->
+		<a ng-repeat="i in navArr" ui-sref="{{i.sref}}" ng-class="{true:'on',false:''}[i.flag]" ng-click="toggle(i.id)">
+			<span class="{{i.class}}"></span>
+			<span>{{i.name}}</span>
+		</a>
+	</div>
+</div>

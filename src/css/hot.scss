@@ -1,0 +1,22 @@
+.swiper-container{
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+.swiper-container{
+	overflow:visible;
+	img{
+		width:100%;
+		height:auto;
+	}
+	.swiper-pagination{
+		bottom:-15px;
+		span{
+			width:18px;
+			height:3px;
+			background:#999;
+			border-radius:0;
+		}
+	}
+}

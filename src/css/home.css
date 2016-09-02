@@ -1,0 +1,88 @@
+.home_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.wrap {
+  width: 100%;
+  height: auto; }
+  .wrap a {
+    float: left;
+    display: inline-block; }
+    .wrap a img {
+      margin: 5px 0 0 5px; }
+  .wrap a:nth-child(1) img {
+    width: 150px;
+    height: 145px; }
+  .wrap a:nth-child(2) img {
+    width: 150px;
+    height: 300px; }
+  .wrap a:nth-child(3) {
+    margin-top: -155px; }
+    .wrap a:nth-child(3) img {
+      width: 150px;
+      height: 145px; }
+  .wrap a:nth-child(4) img {
+    width: 150px;
+    height: 300px; }
+  .wrap a:nth-child(5) img {
+    width: 150px;
+    height: 150px; }
+  .wrap a:nth-child(6) img {
+    width: 150px;
+    height: 140px; }
+  .wrap a:nth-child(7) img {
+    width: 100%;
+    height: 150px; }
+  .wrap a:nth-child(8) img {
+    width: 100%;
+    height: 150px; }
+  .wrap a:nth-child(9) img {
+    width: 100%;
+    height: 150px; }
+  .wrap a:nth-child(10) img {
+    width: 100%;
+    height: 150px; }
+
+.home_alert_box {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  height: 440px;
+  background: #fff;
+  z-index: 22; }
+  .home_alert_box ul {
+    width: 100%;
+    height: auto;
+    margin-top: 70px; }
+    .home_alert_box ul li {
+      width: 100%;
+      height: 40px;
+      line-height: 40px; }
+      .home_alert_box ul li a {
+        font-size: 15px;
+        color: #333;
+        padding: 0 30px; }
+    .home_alert_box ul li.bg {
+      background: #F8F8F8; }
+    .home_alert_box ul li:last-child {
+      margin-top: 50px; }
+  .home_alert_box .try {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+    background: url(../img/huatong.png) no-repeat;
+    background-position: left center;
+    background-size: 15px 20px; }
+    .home_alert_box .try span, .home_alert_box .try small {
+      line-height: 30px; }
+    .home_alert_box .try span {
+      font-size: 13px;
+      padding-right: 10px; }
+    .home_alert_box .try small {
+      font-size: 12px;
+      color: #ccc; }

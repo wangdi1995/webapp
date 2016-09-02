@@ -1,0 +1,58 @@
+<div class="contain animated {{aClass}}">
+	<div class="header">
+		<div class="l-back"></div>
+		<h4>登录</h4>
+		<div class="signUp">注册</div>
+	</div>
+	<div class="main loginPage">
+		<form name="myForm" novalidate>
+			<ul>		
+				<li>  
+					<input type="tel" name="t" required pattern="\w+" placeholder="昵称/邮箱/手机" ng-model="name">
+				  <!-- 	<span style="color:red" ng-class='{true:"cuo",false:"dui"}[myForm.t.$dirty && myForm.t.$invalid]'
+				  ></span> -->
+				</li>
+				<li>
+					<input type="password" name="pass" required pattern="^\d{6}$" placeholder="密码" ng-model="psw">
+				  	<!-- <span style="color:red" ng-class='{true:"cuo",false:"dui"}[myForm.pass.$dirty && myForm.pass.$invalid]'
+				  	></span> -->
+				</li>
+				<li>
+					<button class="l_login" ng-click="loginBtn()" ng-class='{true:"sub",false:"msub"}[myForm.t.$valid && myForm.pass.$valid]'>登录</button>
+				</li>
+			</ul>
+		</form>
+		<div class="l_PicBox">
+			<p>翻转至正确方向<span>换一组</span></p>
+			<div class="l_pic">
+				<img src="img/att-pic1.png" alt="图片路径不正确！">
+				<img src="img/att-pic2.png" alt="图片路径不正确！-u">
+				<img src="img/att-pic3.png" alt="图片路径不正确！">
+				<img src="img/att-pic4.png" alt="图片路径不正确！">
+			</div>
+		</div>
+		<!-- <div class="l_login" ng-click="loginBtn()">
+			<span>登录</span>
+		</div> -->
+		<div class="l_txt">
+			<a href="">全球手机登录&nbsp;</a>
+			<a href="">忘记密码&nbsp;</a>
+			<a href="">设置与帮助</a>
+		</div>
+		<div class="three_login">
+			<p>第三方账号快速登录</p>
+			<dl>
+				<dt><img src="img/l-qq.png" alt="图片路径不正确！"></dt>
+				<dd>QQ登录</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/l-wx.png" alt="图片路径不正确！"></dt>
+				<dd>微信登录</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/l-wb.png" alt="图片路径不正确！"></dt>
+				<dd>微博登录</dd>
+			</dl>
+		</div>
+	</div>
+</div>

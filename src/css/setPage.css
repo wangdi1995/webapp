@@ -1,0 +1,72 @@
+.s-back {
+  background: url(../img/l-jt.png) no-repeat;
+  width: 0.8rem;
+  height: 1.6rem;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem; }
+
+.s_ul {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-bottom: 1rem; }
+  .s_ul li {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #f4f4f4; }
+    .s_ul li p:nth-of-type(2) {
+      position: absolute;
+      right: 1rem;
+      top: 1rem; }
+
+.s_ol {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-bottom: 1rem; }
+  .s_ol li {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #f4f4f4; }
+    .s_ol li p {
+      position: absolute;
+      right: 1rem; }
+
+.onoff {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 5;
+  opacity: 0; }
+  .onoff:checked + label {
+    background-position: -52px 0; }
+
+.lab {
+  -webkit-transition: background-position 1s;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background: url(../img/1.png) no-repeat;
+  width: 77px;
+  height: 27px;
+  color: transparent;
+  z-index: 1;
+  border-radius: 15px; }
+
+.s_btn {
+  color: #fff;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  width: 90%;
+  height: 3.5rem;
+  background: #FF5778;
+  margin: 3rem auto; }

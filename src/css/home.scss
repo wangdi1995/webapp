@@ -1,0 +1,134 @@
+@mixin pos($r:relative){
+	position:$r;
+}
+.home_wrap{
+	width:100%;
+	height:100%;
+	@include pos;
+}
+
+.wrap{
+	width:100%;
+	height:auto;
+	a{
+		float:left;
+		display:inline-block;
+		img{
+			margin:5px 0 0 5px;
+		}
+	}
+	a:nth-child(1){	
+		img{
+			width:150px;
+			height:145px;
+		}
+	}
+	
+	a:nth-child(2){
+		img{
+			width:150px;
+			height:300px;
+		}	
+	}
+	a:nth-child(3){
+		margin-top:-155px;
+		img{
+			width:150px;
+			height:145px;
+		}	
+	}
+	a:nth-child(4){
+		img{
+			width:150px;
+			height:300px;
+		}	
+	}
+	a:nth-child(5){
+		img{
+			width:150px;
+			height:150px;
+		}	
+	}
+	a:nth-child(6){
+		img{
+			width:150px;
+			height:140px;
+		}	
+	}
+	a:nth-child(7){
+		img{
+			width:100%;
+			height:150px;
+		}	
+	}
+	a:nth-child(8){
+		img{
+			width:100%;
+			height:150px;
+		}	
+	}
+	a:nth-child(9){
+		img{
+			width:100%;
+			height:150px;
+		}	
+	}
+	a:nth-child(10){
+		img{
+			width:100%;
+			height:150px;
+		}	
+	}
+}
+.home_alert_box{
+	@include pos(absolute);
+	left:-200px;
+	top:0;
+	width:200px;
+	height:440px;
+	background:#fff;
+	z-index:22;
+	ul{
+		width:100%;
+		height:auto;
+		margin-top:70px;
+		li{
+			width:100%;
+			height:40px;
+			line-height:40px;
+			a{
+				font-size:15px;
+				color:#333;
+				padding:0 30px;
+			}
+		}
+		li.bg{
+			background:#F8F8F8;
+		}
+		li:last-child{
+			margin-top:50px;
+		}
+	}
+	.try{
+		@include pos(absolute);
+		bottom:20px;
+		left:30px;
+		width:100%;
+		height:30px;
+		padding:0 20px;
+		background:url(../img/huatong.png) no-repeat;
+		background-position:left center;
+		background-size:15px 20px;
+		span,small{
+			line-height:30px;
+		}
+		span{
+			font-size:13px;
+			padding-right:10px;
+		}
+		small{
+			font-size:12px;
+			color:#ccc;
+		}
+	}
+}

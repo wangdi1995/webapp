@@ -1,0 +1,16 @@
+.swiper-container img {
+  width: 100%;
+  height: auto; }
+
+.swiper-container {
+  overflow: visible; }
+  .swiper-container img {
+    width: 100%;
+    height: auto; }
+  .swiper-container .swiper-pagination {
+    bottom: -15px; }
+    .swiper-container .swiper-pagination span {
+      width: 18px;
+      height: 3px;
+      background: #999;
+      border-radius: 0; }

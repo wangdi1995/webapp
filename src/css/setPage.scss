@@ -1,0 +1,82 @@
+@mixin pos($r:relative){
+	position:$r;
+}
+.s-back{
+	background:url(../img/l-jt.png) no-repeat;
+	width:0.8rem;
+	height:1.6rem;
+	background-size:100% 100%;
+	@include pos(absolute);
+	left:1rem;
+	top:1.2rem;
+}
+.s_ul{
+	margin-top:1rem;
+	width:100%;
+	height:auto;
+	background:#fff;
+	padding-bottom:1rem;
+	li{
+		@include pos;
+		width:100%;
+		height:4rem;
+		line-height:4rem;
+		border-bottom:1px solid #f4f4f4;
+		p:nth-of-type(2){
+			@include pos(absolute);
+			right:1rem;
+			top:1rem;
+		}
+	}
+}
+.s_ol{
+	margin-top:1rem;
+	width:100%;
+	height:auto;
+	background:#fff;
+	padding-bottom:1rem;
+	li{
+		@include pos;
+		width:100%;
+		height:4rem;
+		line-height:4rem;
+		border-bottom:1px solid #f4f4f4;
+		p{
+			@include pos(absolute);
+			right:1rem;
+		}
+	}
+}
+.onoff{
+	@include pos(absolute);
+	right:2px;
+	top:2px;
+	&:checked+label{
+		background-position:-52px 0;
+	}
+	z-index:5;
+	opacity:0;
+}
+
+.lab{
+	-webkit-transition:background-position 1s;
+	@include pos(absolute);
+	right:2px;
+	top:2px;
+	background:url(../img/1.png) no-repeat;
+	width:77px;
+	height:27px;
+	color:transparent;
+	z-index:1;
+	border-radius:15px;
+}
+.s_btn{
+	color:#fff;
+	text-align:center;
+	line-height:3.5rem;
+	font-size:1.6rem;
+	width:90%;
+	height:3.5rem;
+	background:#FF5778;
+	margin:3rem auto;
+}

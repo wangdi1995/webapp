@@ -1,0 +1,90 @@
+<div class="animated {{aClass}}">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="img/f-ban1.png"></div>
+	        <div class="swiper-slide"><img src="img/f-ban1.png"></div>
+	        <div class="swiper-slide"><img src="img/f-ban1.png"></div>
+	    </div>
+	    <div class="swiper-pagination"></div>
+	</div>
+
+	<div class="f-box1 row">
+			<div class="col-xs-4">
+				<img src="img/f-peo1.png" alt="图片路径不正确！">
+			</div>
+			<div class="col-xs-4">
+				<img src="img/f-peo2.png" alt="图片路径不正确！">
+			</div>
+			<div class="col-xs-4">
+				<img src="img/f-peo3.png" alt="图片路径不正确！">
+			</div>
+	</div>
+
+	<div class="f-box2">
+		<div class="f-list" >
+			<ul>
+				<li ng-click="changeShow('hotTopic')">热门</li>
+				<li ng-click="changeShow('attention')">关注</li>
+				<li ng-click="changeShow('recommend')">推荐</li>
+				<li ng-click="changeShow('liveStreaming')">直播</li>
+				<li><img src="img/add.png" alt="图片路径不正确！"></li>
+			</ul>
+			<div class="f-bg" creat-dom></div>
+		</div>
+			<div ng-switch='showMode'>
+			<div class="f-modle1 modle" ng-switch-default="hotTopic">
+				<div class="f-hot" ng-repeat="i in insHot">
+					<a href="#">
+						<dl>
+							<dt>
+								<img ng-src="{{i.dlImg}}" alt="图片路径不正确！">
+							</dt>
+							<dd>
+								<h4>{{i.h4}}</h4>
+								<time>昨天14:31</time>
+								<span>{{i.span}}</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<img ng-src="{{i.bigImg}}" alt="图片路径不正确！">
+					</a>
+				</div>
+			</div>
+			 <div class="f-modle2 modle" ng-switch-when="attention">
+				<div class="f-recommend" ng-repeat="j in insRec">
+					<div class="re1">
+						<img ng-src="{{j.dlImg}}" alt="图片路径不正确！">
+						<p>敏恩大魔王正在直播，官方节目<a href=''>#敏恩&nbsp;KOREA#</a>第一期，告诉大家韩国好吃好玩的那些事~敏恩正在韩国哟~~去围观思密达</p>
+					</div>
+				</div>
+			</div>
+			<div class="f-modle3 modle" ng-switch-when="recommend">
+				<div class="f-att">
+					<a href="#" ng-repeat="f in insAtt">
+						<img ng-src="{{f}}" alt="图片路径不正确！">
+					</a>
+				</div>
+			</div>
+			<div class="f-modle4 modle" ng-switch-when="liveStreaming">
+				<div class="f-hot" ng-repeat="n in insLive">
+					<a href="#">
+						<dl>
+							<dt>
+								<img ng-src="{{n.dlImg}}" alt="图片路径不正确！">
+							</dt>
+							<dd>
+								<h4>{{n.h4}}</h4>
+								<time>昨天14:31</time>
+								<span>{{n.span}}</span>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<img ng-src="{{n.bigImg}}" alt="图片路径不正确！">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
